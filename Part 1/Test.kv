@@ -1,0 +1,40 @@
+<Interface>:
+Interface:
+    Label:
+        markup: True
+        text: 'Learning [b]Kivy[/b]'
+        pos: dp(350), dp(400)
+        size: 100, 200
+        color: 1, 1, 1, 1
+        font_size: 20
+
+    Button:
+        text: 'Red'
+        pos: 50, 300
+        size: 200, 100
+        color: 1, 1, 1, 1
+        background_color: 1, 0, 0, 1
+        background_normal: 'images/button_normal.png'  #A clear image gives a bright red.
+
+    Button:
+        text: 'Green'
+        pos: 300, 300
+        size: 200, 100
+        color: 1, 1, 1, 1
+        background_color: 0, 1, 0, 1
+        background_normal: 'images/button_normal.png'  #A clear image gives a bright Green.
+
+    Button:
+        text: 'Blue'
+        pos: 550, 300
+        size: 200, 100
+        color: 1, 1, 1, 1
+        background_color: 0, 0, 1, 1
+        background_normal: 'images/button_normal.png'  #A clear image gives a bright Blue.
+
+    TextInput:
+        pos: 300, 150
+        size: 200, 100
+        multiline: False #Disable multiline
+        text: "Enter something!"
+        on_text_validate: root.on_enter_pressed() #Call function in the interface class
